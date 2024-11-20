@@ -2,16 +2,19 @@
 public class GeneralPractitioner extends HealthProfessional {
     private String clinicLocation;
 
+    // Default constructor, initialised to default values
     public GeneralPractitioner() {
         super();
         this.clinicLocation = "Unknown Clinic";
     }
 
+    // Constructor with references, initialises all variables
     public GeneralPractitioner(int ID, String name, String specialty, String clinicLocation) {
         super(ID, name, specialty);
         this.clinicLocation = clinicLocation;
     }
 
+    // Print GP details
     @Override
     public void printDetails() {
         System.out.println("Health Professional Type: General Practitioner");

@@ -5,6 +5,7 @@ public class Appointment {
     private String preferredTimeSlot;
     private HealthProfessional selectedDoctor;
 
+    // Default constructor, initialised to default values
     public Appointment() {
         this.patientName = "Unknown";
         this.patientMobile = "0000000000";
@@ -12,6 +13,7 @@ public class Appointment {
         this.selectedDoctor = new HealthProfessional();
     }
 
+    // Constructor with parameters to initialise patient information and selected doctor
     public Appointment(String patientName, String patientMobile, String preferredTimeSlot, HealthProfessional selectedDoctor) {
         this.patientName = patientName;
         this.patientMobile = patientMobile;
@@ -19,6 +21,7 @@ public class Appointment {
         this.selectedDoctor = selectedDoctor;
     }
 
+    // Print the details of the appointment
     public void printAppointmentDetails() {
         System.out.println("Patient Name: " + patientName);
         System.out.println("Patient Mobile: " + patientMobile);

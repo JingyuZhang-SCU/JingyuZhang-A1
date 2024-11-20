@@ -4,18 +4,21 @@ public class HealthProfessional {
     private String name;
     private String specialty; // 例如，专长领域
 
+    // Default constructor, initialised to default values
     public HealthProfessional() {
         this.ID = 0;
         this.name = "Unknown";
         this.specialty = "General";
     }
 
+    // Constructor with references, initialises all variables
     public HealthProfessional(int ID, String name, String specialty) {
         this.ID = ID;
         this.name = name;
         this.specialty = specialty;
     }
-
+    
+    // Print doctor's details
     public void printDetails() {
         System.out.println("ID: " + ID);
         System.out.println("Name: " + name);
