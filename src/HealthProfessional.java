@@ -2,7 +2,7 @@
 public class HealthProfessional {
     private int ID;
     private String name;
-    private String specialty; // 例如，专长领域
+    private String specialty;
 
     // Default constructor, initialised to default values
     public HealthProfessional() {
