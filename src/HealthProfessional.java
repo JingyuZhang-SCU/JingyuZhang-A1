@@ -1,10 +1,8 @@
 // HealthProfessional.java
 public class HealthProfessional {
-
     private int ID;
     private String name;
-    private String specialty;
-
+    private String specialty; // 例如，专长领域
 
     public HealthProfessional() {
         this.ID = 0;
@@ -12,20 +10,17 @@ public class HealthProfessional {
         this.specialty = "General";
     }
 
-
     public HealthProfessional(int ID, String name, String specialty) {
         this.ID = ID;
         this.name = name;
         this.specialty = specialty;
     }
 
-
     public void printDetails() {
         System.out.println("ID: " + ID);
         System.out.println("Name: " + name);
         System.out.println("Specialty: " + specialty);
     }
-
 
     public int getID() {
         return ID;

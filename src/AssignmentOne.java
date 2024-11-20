@@ -1,6 +1,5 @@
 // AssignmentOne.java
 import java.util.ArrayList;
-import java.util.Scanner;
 
 public class AssignmentOne {
 
@@ -11,9 +10,9 @@ public class AssignmentOne {
         System.out.println("// Part 3 – Using classes and objects");
 
 
-        GeneralPractitioner gp1 = new GeneralPractitioner(101, "Dr.Zhang", "general practitioners", "诊区A");
-        GeneralPractitioner gp2 = new GeneralPractitioner(102, "Dr.Cheng", "general practitioners", "诊区B");
-        GeneralPractitioner gp3 = new GeneralPractitioner(103, "Dr.Zhao", "general practitioners", "诊区C");
+        GeneralPractitioner gp1 = new GeneralPractitioner(101, "Dr.Zhang", "neurosurgery", "Diagnostic AreaA");
+        GeneralPractitioner gp2 = new GeneralPractitioner(102, "Dr.Cheng", "general medicine", "Diagnostic AreaB");
+        GeneralPractitioner gp3 = new GeneralPractitioner(103, "Dr.Zhao", "orthopaedic", "Diagnostic AreaC");
 
 
         Dietitian dt1 = new Dietitian(201, "Dr.Wang", "dietitians", "Higher");
@@ -51,7 +50,7 @@ public class AssignmentOne {
 
 
         cancelBooking("9876543211");
-
+        cancelBooking("9876543210");
 
         printExistingAppointments();
 

@@ -1,15 +1,9 @@
 // Appointment.java
 public class Appointment {
-
     private String patientName;
     private String patientMobile;
-
-
     private String preferredTimeSlot;
-
-
     private HealthProfessional selectedDoctor;
-
 
     public Appointment() {
         this.patientName = "Unknown";
@@ -18,7 +12,6 @@ public class Appointment {
         this.selectedDoctor = new HealthProfessional();
     }
 
-
     public Appointment(String patientName, String patientMobile, String preferredTimeSlot, HealthProfessional selectedDoctor) {
         this.patientName = patientName;
         this.patientMobile = patientMobile;
@@ -26,15 +19,14 @@ public class Appointment {
         this.selectedDoctor = selectedDoctor;
     }
 
-
     public void printAppointmentDetails() {
         System.out.println("Patient Name: " + patientName);
         System.out.println("Patient Mobile: " + patientMobile);
         System.out.println("Preferred Time Slot: " + preferredTimeSlot);
+        System.out.println("------");
         System.out.println("Selected Doctor Details:");
         selectedDoctor.printDetails();
     }
-
 
     public String getPatientName() {
         return patientName;
